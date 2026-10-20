@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cc-001",
+    "topic": "Cloud concepts",
+    "question": "A company runs a virtual machine in Azure (IaaS). Which task is the company's responsibility under the shared responsibility model?",
+    "options": [
+      "Securing the physical datacenter",
+      "Maintaining the host hypervisor",
+      "Patching and updating the guest operating system",
+      "Managing the physical network cabling"
+    ],
+    "correct": 2,
+    "explanation": "With IaaS, the customer manages the operating system, applications and data on the VM, including OS patching.",
+    "whyOthersWrong": [
+      "Physical datacenter security is always the cloud provider's responsibility.",
+      "The hypervisor runs on Microsoft's hosts, so Microsoft maintains it.",
+      "Physical networking hardware belongs to the provider."
+    ]
+  },
+  {
+    "id": "cc-002",
+    "topic": "Cloud concepts",
+    "question": "A startup stops buying its own servers and instead pays a monthly bill for the cloud resources it uses. Which shift does this describe?",
+    "options": [
+      "From operational expenditure (OpEx) to capital expenditure (CapEx)",
+      "From capital expenditure (CapEx) to operational expenditure (OpEx)",
+      "From private cloud to hybrid cloud",
+      "From SaaS to PaaS"
+    ],
+    "correct": 1,
+    "explanation": "Buying hardware upfront is CapEx. Paying for cloud services as you use them is OpEx, which lowers the upfront cost.",
+    "whyOthersWrong": [
+      "This is the reverse of what happens. Cloud moves spending away from upfront hardware purchases.",
+      "Nothing in the scenario changes the cloud deployment model.",
+      "Pay-as-you-go billing is a cost model, not a change in service model."
+    ]
+  },
+  {
+  "id": "cc-003",
+  "topic": "Cloud concepts",
+  "question": "An online shop's app gets a big traffic spike at the end of each month. Azure adds more virtual machines to handle the load, then removes them when demand drops. Which cloud benefit does this describe?",
+  "options": [
+    "Scalability",
+    "High availability",
+    "Disaster recovery",
+    "Governance"
+  ],
+  "correct": 0,
+  "explanation": "Scalability is the ability to adjust resources to meet demand. Adding VMs (scaling out) handles peaks, and removing them (scaling in) means you only pay for what you use.",
+  "whyOthersWrong": [
+    "High availability is about keeping a service running despite disruptions, not about matching resources to changing demand.",
+    "Disaster recovery is about restoring services after a major outage.",
+    "Governance is about rules, compliance and control, not resource sizing."
+  ]
+},
+  {
+    "id": "cc-004",
+    "topic": "Cloud concepts",
+    "question": "A bank keeps its most sensitive customer data in its own datacenter but runs its public website in Azure. Which cloud model is this?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "correct": 2,
+    "explanation": "A hybrid cloud combines on-premises or private infrastructure with a public cloud, and lets workloads use each where it fits best.",
+    "whyOthersWrong": [
+      "A purely public cloud would have everything running in Azure.",
+      "A purely private cloud would keep everything in the bank's own environment.",
+      "Community cloud is not one of the AZ-900 deployment models. Multicloud is and it involves using multiple cloud platforms" 
+    ]
+  },
+  {
+    "id": "cc-005",
+    "topic": "Cloud concepts",
+    "question": "Which of the following is an example of Software as a Service (SaaS)?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure App Service",
+      "Microsoft 365",
+      "Azure Virtual Network"
+    ],
+    "correct": 2,
+    "explanation": "In SaaS, the provider manages everything and you just use the finished application. Microsoft 365 is a typical example.",
+    "whyOthersWrong": [
+      "Virtual Machines are IaaS: you manage the OS and what runs on it.",
+      "App Service is PaaS: you deploy your code and Azure manages the platform.",
+      "A Virtual Network is a networking building block, not a finished application."
+    ]
+  }
+]
